@@ -2,7 +2,7 @@
 
 ---
 
-#Semana 02 – Atividade Prática: O Dilema da IA Contratadora.
+# Semana 02 – Atividade Prática: O Dilema da IA Contratadora.
 
 ---
 
