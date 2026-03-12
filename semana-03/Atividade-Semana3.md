@@ -1,1 +1,1 @@
-
+O modelo espiral teria evitado a queda do drone por se um modelo focado na redução sistemática de riscos. Como a cada ciclo (volta da espiral), o produto evolui e os riscos são reavaliados, erros técnicos que causaram a queda do drone teriam sido corrigidos antes do projeto ser finalizado.
