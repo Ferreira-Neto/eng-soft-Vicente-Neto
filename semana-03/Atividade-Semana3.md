@@ -7,4 +7,4 @@ Projeto e Implementação de Software.
 
 
 A Chaos-IT quer saber o quão "madura" ela é. Analisem a descrição abaixo e determinem em qual Nível de Maturidade CMMI ela se encontra atualmente e o que falta para chegar ao próximo:
-- Está no nível 1, falta estabelecer gerência de projetos, gerenciamento de requisitos, garantir qualidade do software e gestão de configuração.
+- Está no nível 1 inicial, falta estabelecer gerência de projetos, gerenciamento de requisitos, garantir qualidade do software e gestão de configuração.
