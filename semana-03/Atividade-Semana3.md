@@ -1,7 +1,7 @@
 Por que a Análise de Riscos em cada volta da espiral teria evitado a queda dos drones?
 - O modelo espiral teria evitado a queda do drone por se um modelo focado na redução sistemática de riscos. A cada ciclo (volta da espiral) o produto evolui e os riscos são reavaliados, erros técnicos que causaram a queda do drone teriam sido corrigidos seguindo os 4 quadrantes da espiral:
 Engenharia de Requisitos, 
-Avaliação e redução de riscos. 
+Avaliação e redução de riscos, 
 Evolução do Software, 
 Projeto e Implementação de Software.
 
