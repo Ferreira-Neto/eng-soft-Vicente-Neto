@@ -14,9 +14,8 @@ Esses métodos são concebidos para produzir software útil de maneira rápida. 
 * Colaboração com o cliente mais que negociação de contratos  
 * Responder a mudanças mais que seguir um plano
 
-Eles permitiram que o time de desenvolvimento se concentrasse no próprio software em vez de no projeto (design) ou na documentação. 
-Com objetivo de reduzir a burocracia do processo ao evitar o trabalho com valor duvidoso no
-longo prazo e eliminar a documentação que provavelmente jamais será utilizada.
+Eles permitiram que o time de desenvolvimento se concentrasse no próprio software em vez de no projeto (design) ou na documentação,
+com objetivo de reduzir a burocracia do processo, e o excesso de documentação desnecessária.
  
 ---
 
