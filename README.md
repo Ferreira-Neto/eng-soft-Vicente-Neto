@@ -21,6 +21,6 @@ Clique nos links abaixo para acessar os arquivos de cada semana:
 * 📄 [Semana 02 - Modelos de Processo](./semana-02)
 * 📄 [Semana 03 - (Missão Crítica: Operação Resgate) ](./semana-03)
 * 📄 [Semana 04 - (Desenvolvimento Ágil) ](./semana-04)
-* 📄 [Semana 05 - Atividade 1 e 2 (Cliente IA) ](./semana-05)
-* 📄 [Semana 06 - ](./semana-06)
+* 📄 [Semana 05 -  ](./semana-05)
+* 📄 [Semana 06 - Atividade 1 e 2 (Cliente IA) ](./semana-06)
 * 📄 [Semana 07 - ](./semana-07)
