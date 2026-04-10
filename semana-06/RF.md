@@ -1,4 +1,4 @@
-* RF1 - O sistema deve permitir o cadastro dos hóspedes com informações omo nome, CPF e telefone.  
+* RF1 - O sistema deve permitir o cadastro dos hóspedes com informações como nome, CPF e telefone.  
 * RF2 - O sistema deve validar a numeração do CPF.  
 * RF3 - O sistema deve ter registrado os produtos do frigobar.  
 * RF4 - O sistema deve impedir duas reservas do mesmo quarto.  
