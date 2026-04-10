@@ -4,7 +4,7 @@
 
 * Como usuário, eu quero poder salvar meu cartão de crédito de forma segura, para facilitar novos pagamentos.  
 
-* Como sevidor, eu quero agendar o horário de retirada do meu café, para economizar tempo.  
+* Como servidor, eu quero agendar o horário de retirada do meu café, para economizar tempo.  
 
 * Como gerente, eu quero um relatório diário de vendas por categoria, para controle de mercadoria e compreensão da demanda.  
 
