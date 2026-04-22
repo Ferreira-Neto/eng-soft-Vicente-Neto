@@ -4,77 +4,52 @@
 
 | Campo            |	Descrição  |  
 |------------------|-------------|
-| Nome do Projeto: |	XYZ Software  |  
-| Dono do Projeto: |  ABC Company  |  
-| Versão	1.0      |   xxxxx      |  
+| Nome do Projeto: |	Sistema Hotel Bela Vista  |  
+| Dono do Projeto: |  Hotel Bela Vista  |  
+| Versão	      |   1.0      |  
 | Data             |	16/04/2026  |  
 
 ---
 
 # 1. Introdução  
-O objetivo deste documento é descrever os requisitos para o desenvolvimento do XYZ Software. Este documento servirá como guia para a equipe de desenvolvimento, garantindo que todas as características e funcionalidades necessárias sejam implementadas conforme as expectativas dos stakeholders.
-2. Escopo
-O escopo do XYZ Software inclui, mas não se limita às seguintes funcionalidades:
+O objetivo deste documento é descrever os requisitos para o desenvolvimento do Software Sistema Hotel Bela Vista. O sistema visa substituir a atual gestão analógica, este documento servirá como guia para a equipe de desenvolvimento, garantindo que todas as características e funcionalidades necessárias sejam implementadas conforme as expectativas dos stakeholders.  
 
-    • Funcionalidade 1: [Descrição breve da primeira funcionalidade principal]
-    • Funcionalidade 2: [Descrição breve da segunda funcionalidade principal]
-    • Funcionalidade 3: [Descrição breve da terceira funcionalidade principal]
+# 2. Escopo
+O escopo do Sistema Hotel Bela Vista inclui, mas não se limita às seguintes funcionalidades:  
+
+
+    • Controle de reservas e ocupação de quartos em tempo real.
+    • Gestão de consumo de frigobar e serviços adicionais para evitar perdas financeiras.
+    • Monitoramento do status de limpeza dos quartos para otimização do trabalho da governança.
+    • Geração de relatórios financeiros mensais de faturamento e despesas.
 
     
 ## 3. Requisitos Funcionais  
 ## 3.1 Funcionalidade 1  
-| ID	| Descrição do Requisito |
+| ID	| Gestão de Hóspedes e Reservas |
 |-----|------------------------|
-| RF 1.1 |	[Descrição detalhada da necessidade do sistema para a funcionalidade 1.1] |  
-| RF 1.2	| [Descrição detalhada da necessidade do sistema para a funcionalidade 1.2] |  
+| RF 1.1 |	Cadastro e Validação: Realizar o registro de hóspedes coletando nome, CPF e telefone, com validação automática dos dados para evitar erros de digitação. |  
+| RF 1.2	| Controle de Ocupação: Efetuar check-in e check-out de forma automática, além de gerenciar o calendário de reservas para impedir que dois hóspedes ocupem o mesmo quarto simultaneamente |  
+| RF 1.3	| Flexibilidade de Estadia: Permitir a alteração de datas das reservas para atender hóspedes que desejam estender sua permanência. |  
 
 ## 3.2 Funcionalidade 2  
-| ID |	Descrição do Requisito  |
+| ID |	Operações e Governança  |
 |-----|------------------------|
-| RF 2.1 |	[Descrição detalhada da necessidade do sistema para a funcionalidade 2.1]  |
-| RF 2.2 |	[Descrição detalhada da necessidade do sistema para a funcionalidade 2.2]  |
+| RF 2.1 |	Monitoramento de Status: Informar visualmente se cada quarto está livre, ocupado ou se necessita de limpeza. |  
+| RF 2.2 |	Identificação de Acomodações: Diferenciar facilmente os tipos de quartos (Simples, Suíte Luxo e Família) no mapa do sistema para evitar erros de alocação. |  
+| RF 2.3 |	Gestão de Consumo: Registrar os produtos contidos no frigobar para que a equipe possa verificar o consumo antes da saída do cliente. |  
 
+## 3.3 Funcionalidade 3  
+| ID |	Operações e Governança  |
+|-----|------------------------|
+| RF 3.1 |	Automação de Cálculos: Realizar o cálculo automático do valor total da estadia somado ao consumo do hóspede, eliminando o uso de calculadoras manuais. |  
+| RF 3.2 |	Relatórios Financeiros: Registrar todas as entradas (faturamento) e saídas (despesas) do hotel para facilitar o fechamento do lucro ao final do mês. |  
 
 ## 4. Requisitos Não Funcionais
-    • RNF 4.1: [Descrição do requisito de qualidade, ex: O sistema deve responder a requisições em menos de 2 segundos.]
-    • RNF 4.2: [Descrição do requisito, ex: A interface deve ser acessível conforme as normas WCAG.]
-## 5. Design da Interface do Usuário (UI)
-    • Design 1: [Descrição de padrões visuais, paleta de cores ou links para wireframes.]
-    • Design 2: [Descrição do fluxo de navegação e experiência do usuário (UX).]
-## 6. Arquitetura do Sistema
-    • Arquitetura 1: [Definição do padrão arquitetural, ex: MVC, Microsserviços ou Arquitetura em Camadas.]
-    • Arquitetura 2: [Tecnologias envolvidas, como linguagens de programação, frameworks e banco de dados.]
-## 7. Requisitos de Dados
-    • RD 7.1: [Descrição das entidades principais e relacionamentos no banco de dados.]
-    • RD 7.2: [Regras para integridade de dados e políticas de backup.]
-## 8. Requisitos de Segurança
-    • RS 8.1: [Definição de perfis de acesso e mecanismos de autenticação (ex: OAuth2, JWT).]
-    • RS 8.2: [Protocolos de segurança para tráfego de dados (HTTPS/TLS) e criptografia de dados sensíveis.]
-## 9. Requisitos de Desempenho
-    • RP 9.1: [Especificação de throughput e suporte a acessos simultâneos.]
-    • RP 9.2: [Limites de consumo de memória e processamento em ambiente de produção.]
-## 10. Requisitos de Teste
-    • RT 10.1: [Estratégia para testes unitários, de integração e cobertura de código.]
-    • RT 10.2: [Procedimentos para testes de aceitação do usuário (UAT) e critérios de sucesso.]  
+    • RNF 4.1: Garantia de persistência de dados em servidor para evitar perdas por queda de energia ou falhas locais.
+    • RNF 4.2: Validação rigorosa de dados de entrada para evitar erros de digitação.
+    • RNF 4.3: Interface intuitiva com "mapa de quartos" visual, utilizando cores para status.
+    • RNF 4.4: Disponibilidade do sistema 24/7 com manutenções em horários de baixo movimento.
 
-## 11. Cronograma do Projeto  
-| Tarefa | 	Data de Início	| Data de Término |   
-|--------|------------------|-----------------|
-| Levantamento de Requisitos| 	[Data]	[Data]  | 
-| Design e Prototipagem| 	[Data]	[Data]  | 
-| Desenvolvimento| 	[Data]	[Data]  | 
-| Testes| 	[Data]	[Data]  | 
-| Implantação| 	[Data]	[Data] |  
-
-
-Revisões  
-Versão	Data	Descrição  
-1.0	[Data]	Versão inicial  
-1.1	[Data]	Atualização dos requisitos funcionais baseada no feedback inicial  
-
-
-Assinaturas  
-
-Dono do Projeto: ___________________________________________________  
-
-Gerente de Projeto: __________________________________________________  
+## 5. Design da Interface do Usuário (UI)  
+A interface será focada em um "Painel de Controle" ou mapa visual dos quartos. Cada quarto será representado por um bloco colorido indicando seu status (Livre: Verde, Ocupado: Vermelho, Sujo: Amarelo) e seu tipo . O fluxo de navegação permitirá realizar o cadastro de hóspedes e o check-out com poucos cliques, priorizando a agilidade no balcão.  
