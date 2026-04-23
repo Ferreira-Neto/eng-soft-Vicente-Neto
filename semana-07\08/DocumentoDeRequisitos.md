@@ -38,12 +38,9 @@ O escopo do Sistema Hotel Bela Vista inclui, mas não se limita às seguintes fu
 | RF 2.1 |	Monitoramento de Status: Informar visualmente se cada quarto está livre, ocupado ou se necessita de limpeza. |  
 | RF 2.2 |	Identificação de Acomodações: Diferenciar facilmente os tipos de quartos (Simples, Suíte Luxo e Família) no mapa do sistema para evitar erros de alocação. |  
 | RF 2.3 |	Gestão de Consumo: Registrar os produtos contidos no frigobar para que a equipe possa verificar o consumo antes da saída do cliente. |  
+| RF 2.4 |	Automação de Cálculos: Realizar o cálculo automático do valor total da estadia somado ao consumo do hóspede, eliminando o uso de calculadoras manuais. |  
+| RF 2.5 |	Relatórios Financeiros: Registrar todas as entradas (faturamento) e saídas (despesas) do hotel para facilitar o fechamento do lucro ao final do mês. |  
 
-## 3.3 Funcionalidade 3  
-| ID |	Operações e Governança  |
-|-----|------------------------|
-| RF 3.1 |	Automação de Cálculos: Realizar o cálculo automático do valor total da estadia somado ao consumo do hóspede, eliminando o uso de calculadoras manuais. |  
-| RF 3.2 |	Relatórios Financeiros: Registrar todas as entradas (faturamento) e saídas (despesas) do hotel para facilitar o fechamento do lucro ao final do mês. |  
 
 ## 4. Requisitos Não Funcionais
     • RNF 4.1: Garantia de persistência de dados em servidor para evitar perdas por queda de energia ou falhas locais.
