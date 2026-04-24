@@ -1,0 +1,48 @@
+sequenceDiagram
+    participant R as Recepcionista
+    participant S as Sistema
+    participant BD as Banco de Dados
+    participant L as Limpeza
+    participant E as Estoque
+
+    %% Reserva
+    R->>S: Solicitar reserva (data, tipo de quarto, CPF)
+    S->>BD: Verificar disponibilidade do quarto
+    BD-->>S: Retorna status (livre/ocupado)
+
+    alt Quarto disponível
+        S->>BD: Buscar/validar hóspede por CPF
+        BD-->>S: Dados do hóspede
+
+        S->>BD: Registrar reserva
+        S-->>R: Reserva confirmada
+
+    else Quarto ocupado
+        S-->>R: Aviso de conflito de reserva
+    end
+
+    %% Check-in
+    R->>S: Realizar check-in
+    S->>BD: Atualizar status do quarto (ocupado)
+
+    %% Consumo
+    R->>S: Lançar consumo (frigobar/serviço)
+    S->>BD: Registrar consumo na conta
+    S->>E: Atualizar estoque
+    E-->>S: Estoque atualizado
+
+    %% Check-out
+    R->>S: Solicitar fechamento da conta
+    S->>BD: Calcular total (diárias + consumo)
+    BD-->>S: Valor total
+
+    S-->>R: Exibir valor final
+
+    R->>S: Confirmar pagamento
+    S->>BD: Finalizar reserva
+    S->>BD: Atualizar status do quarto (sujo)
+
+    %% Limpeza
+    S->>L: Notificar quarto para limpeza
+    L-->>S: Limpeza concluída
+    S->>BD: Atualizar status do quarto (livre)

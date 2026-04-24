@@ -1,0 +1,18 @@
+stateDiagram-v2
+    [*] --> Livre
+
+    Livre --> Reservado: Criar reserva
+    Reservado --> Livre: Cancelar reserva
+
+    Reservado --> Ocupado: Check-in realizado
+    Livre --> Ocupado: Check-in sem reserva
+
+    Ocupado --> Ocupado: Registrar consumo
+    Ocupado --> Sujo: Check-out / Finalizar reserva
+
+    Sujo --> Limpeza: Solicitar limpeza
+    Limpeza --> Livre: Limpeza concluída
+
+    %% Regras adicionais
+    Reservado --> Reservado: Alterar dados da reserva
+    Livre --> Livre: Consultar disponibilidade
