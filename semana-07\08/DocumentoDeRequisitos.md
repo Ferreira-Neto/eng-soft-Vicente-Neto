@@ -51,19 +51,4 @@ O escopo do Sistema Hotel Bela Vista inclui, mas não se limita às seguintes fu
 ## 5. Design da Interface do Usuário (UI)  
 A interface será focada em um "Painel de Controle" ou mapa visual dos quartos. Cada quarto será representado por um bloco colorido indicando seu status (Livre: Verde, Ocupado: Vermelho, Sujo: Amarelo) e seu tipo . O fluxo de navegação permitirá realizar o cadastro de hóspedes e o check-out com poucos cliques, priorizando a agilidade no balcão. 
 
-graph LR
-    subgraph "Fronteira do Sistema de Logística"
-        UC1((Gerenciar Despacho))
-        UC2((Consultar Estoque))
-        UC3((Verificar Status Transportadora))
-        UC4((Solicitar Emissão de NF))
-    end
-
-    UC1 --> UC2
-    UC1 --> UC3
-    UC1 --> UC4
-
-    Transportadora((Transportadora)) --- UC3
-    ReceitaFederal((Receita Federal)) --- UC4
-
  
