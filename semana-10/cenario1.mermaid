@@ -1,1 +1,11 @@
+graph LR
+    subgraph "Fronteira do Sistema de Logística"
+        UC1((Gerenciar Despacho))
+        UC2((Consultar Estoque))
+        UC3((Verificar Status Transportadora))
+        UC4((Solicitar Emissão de NF))
+    end
 
+    UC1 --> UC2
+    UC1 --> UC3
+    UC1 --> UC4
