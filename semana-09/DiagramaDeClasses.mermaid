@@ -1,0 +1,49 @@
+classDiagram
+    class Hospede {
+        +String nome
+        +String cpf
+        +String telefone
+        +validarCPF()
+    }
+
+    class Quarto {
+        +int numero
+        +String tipo
+        +String status
+        +double valorDiaria
+        +atualizarStatus()
+    }
+
+    class Reserva {
+        +DateTime dataEntrada
+        +DateTime dataSaida
+        +double valorTotalEstadia
+        +realizarCheckIn()
+        +realizarCheckOut()
+        +alterarPeriodo()
+    }
+
+    class ProdutoFrigobar {
+        +String nome
+        +double preco
+        +int estoque
+    }
+
+    class Consumo {
+        +int quantidade
+        +double subtotal
+        +registrarConsumo()
+    }
+
+    class ControleFinanceiro {
+        +double faturamentoMensal
+        +double despesasMensais
+        +calcularLucro()
+        +gerarRelatorio()
+    }
+
+    Hospede "1" -- "0..*" Reserva : realiza
+    Quarto "1" -- "0..*" Reserva : é alocado em
+    Reserva "1" -- "0..*" Consumo : possui
+    Consumo "*" -- "1" ProdutoFrigobar : refere-se a
+    Reserva "*" -- "1" ControleFinanceiro : gera dados para
