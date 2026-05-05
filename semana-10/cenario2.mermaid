@@ -1,22 +1,26 @@
 graph LR
-    Cliente((Cliente))
-    Cozinheiro((Cozinheiro))
-    Operadora[((Operadora Pagamento))]
+    %% Atores
+    C((Cliente))
+    CZ((Cozinheiro))
+    P[Sistema de Pagamento]
 
-    subgraph Totem [Sistema do Totem]
-        UC1([Fazer Pedido])
-        UC2([Realizar Pagamento])
-        UC3([Atualizar Fidelidade])
-        UC4([Monitor da Cozinha])
+    subgraph Totem [Totem de Autoatendimento]
+        A([Fazer Pedido])
+        B([Pagar Pedido])
+        D([Atualizar Fidelidade])
+        E([Monitor Cozinha])
     end
 
-    Cliente --- UC1
-    Cliente --- UC2
-    UC1 -.->|include| UC2
-    UC2 -.->|include| UC3
-    UC2 -.->|include| UC4
+    %% Relacoes
+    C --- A
+    C --- B
+    A -.-> B
+    B -.-> D
+    B -.-> E
 
-    UC2 --- Operadora
-    UC4 --- Cozinheiro
+    %% Conexoes Externas
+    B --- P
+    E --- CZ
 
-    style Operadora fill:#f9f,stroke:#333
+    %% Estilo
+    style P fill:#f9f,stroke:#333
