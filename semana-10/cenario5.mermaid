@@ -1,0 +1,16 @@
+graph LR
+    subgraph "Marketplace"
+        UC_Busca(Buscar Profissional)
+        UC_Pag(Liberar Pagamento)
+        UC_Aval(Avaliar Profissional)
+        UC_Filtro(Filtrar Localizaçao/Disp)
+    end
+
+    Cliente((Cliente)) --> UC_Busca
+    Cliente --> UC_Aval
+    Cliente --> UC_Pag
+
+    UC_Busca ..> UC_Filtro : <<include>>
+    UC_Aval ..> UC_Pag : <<extend>>
+
+    Note right of UC_Aval: A avaliaçao ocorre APOS o pagamento
