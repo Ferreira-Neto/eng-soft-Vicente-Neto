@@ -1,0 +1,19 @@
+graph LR
+    subgraph "Sistema do Totem (Fronteira)"
+        UC1(Fazer Pedido)
+        UC2(Realizar Pagamento)
+        UC3(Atualizar Fidelidade)
+        UC4(Exibir Pedido na Cozinha)
+    end
+
+    Cliente((Cliente)) --> UC1
+    Cliente --> UC2
+    
+    UC1 ..> UC2 : <<include>>
+    UC2 ..> UC3 : <<include>>
+    UC2 ..> UC4 : <<include>>
+
+    UC2 --- Card((Operadora de Cartão/PIX))
+    UC4 --- Cozinheiro((Cozinheiro))
+
+    style Card fill:#f9f,stroke:#333
