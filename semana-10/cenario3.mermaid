@@ -1,0 +1,11 @@
+sequenceDiagram
+    participant S as Sensor Cardíaco
+    participant A as App Mobile
+    participant V as Servidor
+    participant M as Tablet do Médico
+
+    S->>A: Envia dados biométricos
+    Note over A: Detecta alteração
+    A->>V: Solicita histórico do paciente
+    V-->>A: Retorna histórico
+    V->>M: Dispara alerta imediato
