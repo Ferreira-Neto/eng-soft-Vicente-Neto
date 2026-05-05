@@ -1,0 +1,18 @@
+graph TD
+    subgraph Usuario [Usuário]
+        A[Aproxima Celular]
+    end
+
+    subgraph App [Sistema/App]
+        B{Valida Agenda?}
+        C[Envia comando de destrancar]
+    end
+
+    subgraph Hardware [Fechadura]
+        D[Abrir Porta]
+    end
+
+    A --> B
+    B -- Sim --> C
+    B -- Não --> E[Acesso Negado]
+    C --> D
