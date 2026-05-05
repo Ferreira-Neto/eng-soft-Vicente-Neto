@@ -25,5 +25,5 @@ Clique nos links abaixo para acessar os arquivos de cada semana:
 * 📄 [Semana 06 - Atividade 1 e 2 (Cliente IA) ](./semana-06)
 * 📄 [Semana 07\08 - Documento de Requisitos ](./semana-07\08)
 * 📄 [Semana 09 - (PIM) Diagramas ](./semana-09)
-* 📄 [Semana 10 - ](./semana-10)
+* 📄 [Semana 10 - Exercícios de Revisão ](./semana-10)
 * 📄 [Semana 11 - ](./semana-11)
